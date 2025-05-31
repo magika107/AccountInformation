@@ -167,3 +167,17 @@
 2025-06-01 00:11:47.201 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
 2025-06-01 00:13:05.661 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
 2025-06-01 00:13:05.664 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:56:25.806 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:56:25.810 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:56:38.070 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Saved To File
+2025-06-01 00:56:38.070 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Saved
+2025-06-01 00:56:38.138 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:56:38.138 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:56:38.139 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=1, name=asdfa, family=asdfasdf, birthDate=2025-06-01, phoneNumber=asdfad, username=fdfgsd, password=sdfas)
+2025-06-01 00:56:44.470 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:56:44.470 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:56:50.739 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Saved To File
+2025-06-01 00:56:50.739 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Saved
+2025-06-01 00:56:50.769 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:56:50.769 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:56:50.769 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=7, name=fadf, family=sdfasd, birthDate=2025-06-01, phoneNumber=asdfa, username=sadfs, password=fasfa)
