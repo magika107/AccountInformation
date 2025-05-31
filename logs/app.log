@@ -1,0 +1,169 @@
+2025-05-31 20:07:29.027 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Saved To File
+2025-05-31 20:07:29.030 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Person Saved
+2025-05-31 20:07:29.091 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:07:29.091 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 20:07:41.264 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Saved To File
+2025-05-31 20:07:41.264 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Person Saved
+2025-05-31 20:07:41.293 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:07:41.294 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 20:07:53.657 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Saved To File
+2025-05-31 20:07:53.657 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Person Saved
+2025-05-31 20:07:53.681 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:07:53.681 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 20:08:12.779 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:12.781 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family By Ncame By Family
+2025-05-31 20:08:15.193 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:15.194 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family By Name By Family
+2025-05-31 20:08:15.476 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:15.476 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family By ame By Family
+2025-05-31 20:08:16.290 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:16.290 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family ame By Family
+2025-05-31 20:08:19.139 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:19.140 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  By Family
+2025-05-31 20:08:21.152 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:21.153 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family c By Family
+2025-05-31 20:08:22.675 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:22.675 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  By Family
+2025-05-31 20:08:22.844 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:22.844 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  By Family
+2025-05-31 20:08:26.784 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Saved To File
+2025-05-31 20:08:26.784 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Person Saved
+2025-05-31 20:08:26.810 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:26.811 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 20:08:31.043 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:31.044 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  
+2025-05-31 20:08:33.456 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:33.456 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family c 
+2025-05-31 20:08:35.827 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:35.828 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  
+2025-05-31 20:08:42.533 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:42.533 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family s 
+2025-05-31 20:08:45.868 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:45.868 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family sd 
+2025-05-31 20:08:51.307 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:51.307 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  
+2025-05-31 20:08:56.987 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:56.988 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  g
+2025-05-31 20:08:57.624 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:57.625 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  ga
+2025-05-31 20:08:59.459 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 20:08:59.459 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  gas
+2025-05-31 21:18:26.466 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 21:18:26.471 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 21:18:38.063 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 21:18:38.064 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 21:18:39.351 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 21:18:39.351 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 21:18:44.296 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 21:18:44.296 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 21:18:52.287 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Saved To File
+2025-05-31 21:18:52.287 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Person Saved
+2025-05-31 21:18:52.364 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 21:18:52.364 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 21:18:52.365 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfully
+2025-05-31 21:18:58.750 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Saved To File
+2025-05-31 21:18:58.750 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Person Saved
+2025-05-31 21:18:58.777 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 21:18:58.777 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 21:18:58.777 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfully
+2025-05-31 21:19:07.870 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Saved To File
+2025-05-31 21:19:07.870 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Person Saved
+2025-05-31 21:19:07.900 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 21:19:07.901 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 21:19:07.901 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfully
+2025-05-31 22:58:50.181 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-05-31 22:58:59.423 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - src\main\java\mft\model\repsitory\datafile\person.dat (The system cannot find the path specified)
+2025-05-31 23:45:02.042 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:02.050 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 23:45:16.386 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:16.386 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 23:45:24.610 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Saved To File
+2025-05-31 23:45:24.611 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Person Saved
+2025-05-31 23:45:24.682 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:24.683 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons
+2025-05-31 23:45:24.684 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=8, name=sfdasfd, family=ssssss, birthDate=2025-05-31, phoneNumber=sdffffffff, username=dsdddd, password=sddddddd)
+2025-05-31 23:45:29.448 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:29.449 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family a By Family
+2025-05-31 23:45:30.549 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:30.549 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  By Family
+2025-05-31 23:45:30.801 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:30.802 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family s By Family
+2025-05-31 23:45:32.388 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:32.389 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  By Family
+2025-05-31 23:45:32.546 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:32.546 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  By Family
+2025-05-31 23:45:34.251 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:34.251 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family s By Family
+2025-05-31 23:45:36.531 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:36.532 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family s fd
+2025-05-31 23:45:36.736 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:36.736 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family s fd
+2025-05-31 23:45:36.817 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:36.817 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family s fdfg
+2025-05-31 23:45:36.823 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:36.823 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family s fdfg
+2025-05-31 23:45:38.672 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:38.672 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family s 
+2025-05-31 23:45:42.644 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:42.644 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family s 
+2025-05-31 23:45:44.508 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:44.508 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family sd 
+2025-05-31 23:45:46.396 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:46.397 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  
+2025-05-31 23:45:48.204 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:48.204 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family s 
+2025-05-31 23:45:48.490 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:48.490 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family sd 
+2025-05-31 23:45:50.508 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:50.508 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  
+2025-05-31 23:45:53.492 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:53.493 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family i 
+2025-05-31 23:45:54.884 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:54.885 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  
+2025-05-31 23:45:57.452 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:57.452 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family l 
+2025-05-31 23:45:58.754 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:58.754 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  
+2025-05-31 23:45:58.937 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Data Read From File
+2025-05-31 23:45:58.938 [JavaFX Application Thread] INFO  mft.model.PersonDataAccess - Get All Persons By Name and Family  
+2025-06-01 00:06:46.956 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - mft.model.Person
+2025-06-01 00:10:38.777 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - mft.model.Person
+2025-06-01 00:10:45.945 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Saved To File
+2025-06-01 00:10:45.945 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Saved
+2025-06-01 00:10:46.021 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:10:46.021 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:10:46.021 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=1, name=REA, family=ASDFAS, birthDate=2025-06-01, phoneNumber=ASDFAF, username=ADFA, password=EDR)
+2025-06-01 00:10:53.143 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Saved To File
+2025-06-01 00:10:53.144 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Saved
+2025-06-01 00:10:53.174 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:10:53.174 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:10:53.175 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=1, name=ADSFA, family=DFAADSFQW, birthDate=2025-06-01, phoneNumber=DREWRW, username=EQADFA, password=ASDF)
+2025-06-01 00:11:12.306 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:11:12.307 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:11:18.063 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Saved To File
+2025-06-01 00:11:18.064 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Saved
+2025-06-01 00:11:18.098 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:11:18.098 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:11:18.099 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=3, name=SDFAS, family=SDFSDF, birthDate=2025-06-01, phoneNumber=SDFSD, username=ASDF, password=ADSFA)
+2025-06-01 00:11:22.017 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:11:22.017 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:11:26.704 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Saved To File
+2025-06-01 00:11:26.704 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Saved
+2025-06-01 00:11:26.730 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:11:26.730 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:11:26.731 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=4, name=ASDFASDF, family=AsdFSadF, birthDate=2025-06-01, phoneNumber=ASDF, username=SDFDS, password=FSDFDSF)
+2025-06-01 00:11:36.120 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Saved To File
+2025-06-01 00:11:36.120 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Saved
+2025-06-01 00:11:36.148 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:11:36.148 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:11:36.149 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=5, name=SDFAs, family=ddsF, birthDate=2025-06-01, phoneNumber=DSA, username=DSF, password=ASDF)
+2025-06-01 00:11:39.885 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:11:39.888 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons By Name and Family S By Family
+2025-06-01 00:11:42.005 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:11:42.005 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons By Name and Family S 
+2025-06-01 00:11:44.396 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:11:44.396 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons By Name and Family SS 
+2025-06-01 00:11:47.201 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:11:47.201 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 00:13:05.661 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 00:13:05.664 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
