@@ -22,7 +22,10 @@ import java.util.ResourceBundle;
 @Log4j2
 public class PersonViewController implements Initializable {
     @FXML
-    private TextField idTxt, nameTxt, familyTxt, phoneNumberTxt, passwordTxt, userNameTxt, nameSearchTxt, familySearchTxt;
+    private TextField idTxt, nameTxt, familyTxt, phoneNumberTxt, userNameTxt, nameSearchTxt, familySearchTxt;
+    @FXML
+    private PasswordField passwordPas;
+
     @FXML
     private DatePicker birthDate;
     @FXML
@@ -62,7 +65,7 @@ public class PersonViewController implements Initializable {
                         .family(familyTxt.getText())
                         .birthDate(birthDate.getValue())
                         .phoneNumber(phoneNumberTxt.getText())
-                        .password(passwordTxt.getText())
+                        .password(passwordPas.getText())
                         .username(userNameTxt.getText())
                         .build();
                 personDataAccess.savePerson(person);
@@ -78,7 +81,7 @@ public class PersonViewController implements Initializable {
         });
 
         editBtn.setOnAction((event) -> {
-            try{
+            try {
                 Person person =
                         Person
                                 .builder()
@@ -86,7 +89,7 @@ public class PersonViewController implements Initializable {
                                 .name(nameTxt.getText())
                                 .family(familyTxt.getText())
                                 .username(userNameTxt.getText())
-                                .password(passwordTxt.getText())
+                                .password(passwordPas.getText())
                                 .birthDate(birthDate.getValue())
                                 .build();
                 personDataAccess.editPerson(person);
@@ -94,28 +97,25 @@ public class PersonViewController implements Initializable {
                 alert.show();
                 resetForm();
                 log.info("Person Edit Successfully " + person);
-            }catch(Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
                 log.error("Person Editing " + e.getMessage());
             }
         });
 
         removeBtn.setOnAction((event) -> {
-            try{
+            try {
                 int id = Integer.parseInt(idTxt.getText());
                 personDataAccess.removePerson(id);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, "Person Removed Successfully", ButtonType.OK);
                 alert.show();
                 resetForm();
                 log.info("Person Deleted Successfully " + id);
-            }catch(Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
                 log.error("Person Deleting Error :" + e.getMessage());
             }
         });
-
-
-
 
 
         clearBtn.setOnAction((event) -> {
@@ -146,7 +146,7 @@ public class PersonViewController implements Initializable {
             familyTxt.setText(selectedPerson.getFamily());
             birthDate.setValue(selectedPerson.getBirthDate());
             phoneNumberTxt.setText(selectedPerson.getPhoneNumber());
-            passwordTxt.setText(selectedPerson.getPassword());
+            passwordPas.setText(selectedPerson.getPassword());
             userNameTxt.setText(selectedPerson.getUsername());
         };
         PersonTab.setOnMouseReleased(tableChangeEvent);
@@ -163,7 +163,7 @@ public class PersonViewController implements Initializable {
         nameTxt.clear();
         familyTxt.clear();
         phoneNumberTxt.clear();
-        passwordTxt.clear();
+        passwordPas.clear();
         userNameTxt.clear();
         birthDate.setValue(LocalDate.now());
 

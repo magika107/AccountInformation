@@ -14,8 +14,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="mft.controller.PersonViewController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mft.controller.PersonViewController">
     <children>
         <GridPane layoutX="28.0" layoutY="22.0" prefHeight="278.0" prefWidth="272.0">
             <columnConstraints>
@@ -40,13 +39,13 @@
                 <Label text="Username" GridPane.rowIndex="5" />
                 <Label text="Password" GridPane.rowIndex="6" />
                 <Label text="PhoneNumber" GridPane.rowIndex="4" />
-                <PasswordField fx:id="passwordTxt" GridPane.columnIndex="1" GridPane.rowIndex="6" />
                 <TextField fx:id="idTxt" editable="false" GridPane.columnIndex="1" />
                 <TextField fx:id="nameTxt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <TextField fx:id="familyTxt" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                 <TextField fx:id="userNameTxt" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                 <DatePicker fx:id="birthDate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                 <TextField fx:id="phoneNumberTxt" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <PasswordField fx:id="passwordPas" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             </children>
         </GridPane>
         <HBox layoutX="14.0" layoutY="356.0" prefHeight="42.0" prefWidth="293.0">
