@@ -62,20 +62,21 @@ public class PersonDataAccess {
         return persons;
     }
 
-//    public Person login(String username, String password) throws IOException, ClassNotFoundException, UserNotFoundException {
-//        List<Person> personList = PersonDataFileManager.getManager().readFromFile();
-//        List<Person> persons =
-//                personList
-//                        .stream()
-//                        .filter(person -> person.getUsername().equalsIgnoreCase(username) && person.getPassword().equals(password))
-//                        .collect(Collectors.toList());
-//        if (!persons.isEmpty()) {
-//            Person loginPerson = persons.get(0);
-//            log.info("Login " + loginPerson);
-//            return loginPerson;
-//        }else{
-//            throw new UserNotFoundException("No User With username/password");
-//        }
+    public Person login(String username, String password) throws IOException, ClassNotFoundException, UserNotFoundException {
+        List<Person> personList = PersonDataFileManager.getManager().readFromFile();
+        List<Person> persons =
+                personList
+                        .stream()
+                        .filter(person -> person.getUsername().equalsIgnoreCase(username) && person.getPassword().equals(password))
+                        .collect(Collectors.toList());
+        if (!persons.isEmpty()) {
+            Person loginPerson = persons.get(0);
+            log.info("Login " + loginPerson);
+            return loginPerson;
+        } else {
+            throw new UserNotFoundException("No User With username/password");
+        }
+    }
 }
 
 
