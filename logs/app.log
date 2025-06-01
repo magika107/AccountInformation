@@ -181,3 +181,88 @@
 2025-06-01 00:56:50.769 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
 2025-06-01 00:56:50.769 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
 2025-06-01 00:56:50.769 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=7, name=fadf, family=sdfasd, birthDate=2025-06-01, phoneNumber=asdfa, username=sadfs, password=fasfa)
+2025-06-01 09:32:54.561 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Data Read From File
+2025-06-01 09:32:54.564 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:06:35.795 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:06:35.798 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - null
+2025-06-01 10:20:02.947 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:20:15.834 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - src\main\java\mft\model\repository\datafile\person.dat (The system cannot find the path specified)
+2025-06-01 10:23:47.240 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:23:47.243 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:23:54.765 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:23:54.765 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Saved Person(id=1, name=fasda, family=aefas, birthDate=2025-06-01, phoneNumber=asdfas, username=asdfas, password=asdfa)
+2025-06-01 10:23:54.834 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:23:54.834 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:23:54.835 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=1, name=fasda, family=aefas, birthDate=2025-06-01, phoneNumber=asdfas, username=asdfas, password=asdfa)
+2025-06-01 10:23:59.531 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:23:59.531 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Edited Person(id=1, name=asdfa, family=asdfasdf, birthDate=2025-06-01, phoneNumber=null, username=fdfgsd, password=sdfas)
+2025-06-01 10:23:59.561 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:23:59.561 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:23:59.563 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Edit Successfully Person(id=1, name=asdfa, family=asdfasdf, birthDate=2025-06-01, phoneNumber=null, username=fdfgsd, password=sdfas)
+2025-06-01 10:24:04.728 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:24:04.728 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Removed 7
+2025-06-01 10:24:04.758 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:24:04.758 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:24:04.759 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Deleted Successfully 7
+2025-06-01 10:24:06.887 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:24:06.888 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Removed 1
+2025-06-01 10:24:06.918 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:24:06.919 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:24:06.920 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Deleted Successfully 1
+2025-06-01 10:24:13.336 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:24:13.336 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Edited Person(id=1, name=asdfa, family=asdfasdf, birthDate=2025-06-01, phoneNumber=null, username=fdfgsd, password=sdfas)
+2025-06-01 10:24:13.360 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:24:13.360 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:24:13.361 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Edit Successfully Person(id=1, name=asdfa, family=asdfasdf, birthDate=2025-06-01, phoneNumber=null, username=fdfgsd, password=sdfas)
+2025-06-01 10:24:19.400 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:24:19.400 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Edited Person(id=1, name=asdfa, family=asdfasdf, birthDate=2025-06-01, phoneNumber=null, username=fdfgsd, password=sdfas)
+2025-06-01 10:24:19.423 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:24:19.423 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:24:19.424 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Edit Successfully Person(id=1, name=asdfa, family=asdfasdf, birthDate=2025-06-01, phoneNumber=null, username=fdfgsd, password=sdfas)
+2025-06-01 10:24:22.656 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:24:22.656 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Removed 1
+2025-06-01 10:24:22.705 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:24:22.705 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:24:22.706 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Deleted Successfully 1
+2025-06-01 10:24:24.719 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:24:24.719 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Removed 1
+2025-06-01 10:24:24.742 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:24:24.742 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:24:24.743 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Deleted Successfully 1
+2025-06-01 10:27:52.867 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:27:52.867 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Removed 5
+2025-06-01 10:27:52.922 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:27:52.922 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:27:52.923 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Deleted Successfully 5
+2025-06-01 10:31:42.689 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:31:42.689 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:31:45.384 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:31:45.384 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Removed 4
+2025-06-01 10:31:45.413 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:31:45.413 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:31:45.414 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Deleted Successfully 4
+2025-06-01 10:31:47.432 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:31:47.432 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Removed 1
+2025-06-01 10:31:47.456 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:31:47.456 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:31:47.457 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Deleted Successfully 1
+2025-06-01 10:31:49.816 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:31:49.816 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Removed 3
+2025-06-01 10:31:49.836 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:31:49.836 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:31:49.836 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Deleted Successfully 3
+2025-06-01 10:31:56.128 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:31:56.128 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Saved Person(id=1, name=asdfas, family=sdfasd, birthDate=2025-06-01, phoneNumber=sadfds, username=fsads, password=sadf)
+2025-06-01 10:31:56.149 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:31:56.149 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:31:56.150 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=1, name=asdfas, family=sdfasd, birthDate=2025-06-01, phoneNumber=sadfds, username=fsads, password=sadf)
+2025-06-01 10:32:01.712 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:32:01.712 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Saved Person(id=2, name=sdfasdfaw, family=sdfsdfdf, birthDate=2025-06-01, phoneNumber=sdf, username=sdafds, password=fsdfd)
+2025-06-01 10:32:01.736 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:32:01.737 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:32:01.737 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person created successfullyPerson(id=2, name=sdfasdfaw, family=sdfsdfdf, birthDate=2025-06-01, phoneNumber=sdf, username=sdafds, password=fsdfd)
+2025-06-01 10:32:04.679 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Saved To File
+2025-06-01 10:32:04.680 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Person Removed 2
+2025-06-01 10:32:04.701 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataFileManager - Data Read From File
+2025-06-01 10:32:04.701 [JavaFX Application Thread] INFO  mft.model.repository.PersonDataAccess - Get All Persons
+2025-06-01 10:32:04.702 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Deleted Successfully 2

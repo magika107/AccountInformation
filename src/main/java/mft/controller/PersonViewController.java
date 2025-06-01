@@ -76,6 +76,48 @@ public class PersonViewController implements Initializable {
                 log.error(e.getMessage());
             }
         });
+
+        editBtn.setOnAction((event) -> {
+            try{
+                Person person =
+                        Person
+                                .builder()
+                                .id(Integer.parseInt(idTxt.getText()))
+                                .name(nameTxt.getText())
+                                .family(familyTxt.getText())
+                                .username(userNameTxt.getText())
+                                .password(passwordTxt.getText())
+                                .birthDate(birthDate.getValue())
+                                .build();
+                personDataAccess.editPerson(person);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION, "Person Edited Successfully", ButtonType.OK);
+                alert.show();
+                resetForm();
+                log.info("Person Edit Successfully " + person);
+            }catch(Exception e){
+                e.printStackTrace();
+                log.error("Person Editing " + e.getMessage());
+            }
+        });
+
+        removeBtn.setOnAction((event) -> {
+            try{
+                int id = Integer.parseInt(idTxt.getText());
+                personDataAccess.removePerson(id);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION, "Person Removed Successfully", ButtonType.OK);
+                alert.show();
+                resetForm();
+                log.info("Person Deleted Successfully " + id);
+            }catch(Exception e){
+                e.printStackTrace();
+                log.error("Person Deleting Error :" + e.getMessage());
+            }
+        });
+
+
+
+
+
         clearBtn.setOnAction((event) -> {
             resetForm();
         });
