@@ -47,7 +47,7 @@ public class PersonViewController implements Initializable {
     private List<Person> personList = new ArrayList<>();
 
 
-    private PersonDataAccess personDataAccess = new PersonDataAccess();
+    //private PersonDataAccess personDataAccess = new PersonDataAccess();
 
 
     @Override
@@ -57,7 +57,7 @@ public class PersonViewController implements Initializable {
         saveBtn.setOnMouseClicked((event) -> {
 
 
-            try {
+            try(PersonDataAccess personDataAccess = new PersonDataAccess()) {
                 Person person = Person
                         .builder()
                         .id(Integer.parseInt(idTxt.getText()))
@@ -68,20 +68,19 @@ public class PersonViewController implements Initializable {
                         .password(passwordPas.getText())
                         .username(userNameTxt.getText())
                         .build();
-                personDataAccess.savePerson(person);
+                personDataAccess.save(person);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, "Person created successfully", ButtonType.OK);
                 alert.show();
                 resetForm();
                 log.info("Person created successfully" + person);
 //                personList.add(person);
             } catch (Exception e) {
-                e.printStackTrace();
-                log.error(e.getMessage());
+                log.error("Person Creation Error : " + e.getMessage());
             }
         });
 
         editBtn.setOnAction((event) -> {
-            try {
+            try (PersonDataAccess personDataAccess = new PersonDataAccess()) {
                 Person person =
                         Person
                                 .builder()
@@ -92,49 +91,44 @@ public class PersonViewController implements Initializable {
                                 .password(passwordPas.getText())
                                 .birthDate(birthDate.getValue())
                                 .build();
-                personDataAccess.editPerson(person);
+                personDataAccess.edit(person);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, "Person Edited Successfully", ButtonType.OK);
                 alert.show();
                 resetForm();
                 log.info("Person Edit Successfully " + person);
             } catch (Exception e) {
-                e.printStackTrace();
                 log.error("Person Editing " + e.getMessage());
             }
         });
 
         removeBtn.setOnAction((event) -> {
-            try {
+            try (PersonDataAccess personDataAccess = new PersonDataAccess()){
                 int id = Integer.parseInt(idTxt.getText());
-                personDataAccess.removePerson(id);
+                personDataAccess.delete(id);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, "Person Removed Successfully", ButtonType.OK);
                 alert.show();
                 resetForm();
                 log.info("Person Deleted Successfully " + id);
             } catch (Exception e) {
-                e.printStackTrace();
                 log.error("Person Deleting Error :" + e.getMessage());
             }
         });
-
 
         clearBtn.setOnAction((event) -> {
             resetForm();
         });
 
         nameSearchTxt.setOnKeyReleased((event) -> {
-            try {
-                personList = personDataAccess.getPersonsByNameAndFamily(nameSearchTxt.getText(), familySearchTxt.getText());
-                showPersonOnTable(personList);
+            try (PersonDataAccess personDataAccess = new PersonDataAccess()){
+                showPersonOnTable(personDataAccess.findByNameAndFamily(nameSearchTxt.getText(), familySearchTxt.getText()));
             } catch (Exception e) {
                 log.error(e.getMessage());
             }
         });
 
         familySearchTxt.setOnKeyReleased((event) -> {
-            try {
-                personList = personDataAccess.getPersonsByNameAndFamily(nameSearchTxt.getText(), familySearchTxt.getText());
-                showPersonOnTable(personList);
+            try (PersonDataAccess personDataAccess = new PersonDataAccess()){
+                showPersonOnTable(personDataAccess.findByNameAndFamily(nameSearchTxt.getText(), familySearchTxt.getText()));
             } catch (Exception e) {
                 log.error(e.getMessage());
             }
@@ -167,8 +161,7 @@ public class PersonViewController implements Initializable {
         userNameTxt.clear();
         birthDate.setValue(LocalDate.now());
 
-        try {
-            personList = personDataAccess.getAllPersons();
+        try (PersonDataAccess personDataAccess = new PersonDataAccess()){
             showPersonOnTable(personList);
         } catch (IOException e) {
             throw new RuntimeException(e);

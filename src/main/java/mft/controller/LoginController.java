@@ -27,13 +27,10 @@ public class LoginController implements Initializable {
     @FXML
     private Button loginBtn;
 
-
-    private PersonDataAccess personDataAccess = new PersonDataAccess();
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         loginBtn.setOnAction(event -> {
-            try {
+            try (PersonDataAccess personDataAccess = new PersonDataAccess()) {
                 Person person = personDataAccess.login(usernameTxt.getText(), passwordTxt.getText());
 
                 loginBtn.getScene().getWindow().hide();
@@ -48,12 +45,11 @@ public class LoginController implements Initializable {
                 log.info("Person Logged In Successfully " + usernameTxt.getText() + ":" + passwordTxt.getText());
             } catch (UserNotFoundException e) {
                 log.error("Person Login Error : " + usernameTxt.getText() + ":" + passwordTxt.getText() + " " + e.getMessage());
-            }catch (Exception e ){
+            } catch (Exception e) {
                 log.error("Person Login Error : " + e.getMessage());
             }
         });
     }
-
 
 
 }
