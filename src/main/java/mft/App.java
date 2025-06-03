@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import lombok.extern.log4j.Log4j2;
 import mft.model.entity.Person;
-import mft.model.repository.PersonDataAccess;
+import mft.model.repository.PersonDA;
 
 import java.sql.SQLException;
 
@@ -21,7 +21,7 @@ public class App extends Application {
                         .username("Admin")
                         .password("Admin")
                         .build();
-        PersonDataAccess personDA = new PersonDataAccess();
+        PersonDA personDA = new PersonDA();
         personDA.save(person);
     }
 

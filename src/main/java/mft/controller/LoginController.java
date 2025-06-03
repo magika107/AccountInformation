@@ -10,7 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import lombok.extern.log4j.Log4j2;
 import mft.model.entity.Person;
-import mft.model.repository.PersonDataAccess;
+import mft.model.repository.PersonDA;
 import mft.model.repository.UserNotFoundException;
 
 import java.net.URL;
@@ -30,8 +30,8 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         loginBtn.setOnAction(event -> {
-            try (PersonDataAccess personDataAccess = new PersonDataAccess()) {
-                Person person = personDataAccess.login(usernameTxt.getText(), passwordTxt.getText());
+            try (PersonDA personDA = new PersonDA()) {
+                Person person = personDA.login(usernameTxt.getText(), passwordTxt.getText());
 
                 loginBtn.getScene().getWindow().hide();
 
