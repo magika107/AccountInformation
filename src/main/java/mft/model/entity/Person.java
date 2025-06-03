@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @SuperBuilder
 public class Person implements Serializable {
-
+//todo : setter validator ...
     private int id;
     private String name;
     private String family;
