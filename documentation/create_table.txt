@@ -1,0 +1,16 @@
+SQL> create table persons(
+  2  id number unique not null,
+  3  name nvarchar2(30),
+  4  family nvarchar2(30),
+  5  username nvarchar2(20) unique not null,
+  6  password nvarchar2(20),
+  7  birth_date date,
+  8  role nvarchar2(10),
+  9  algorithm_skill number(1),
+ 10  java_skill number(1),
+ 11  gender nvarchar2(6)
+ 12  );
+
+Table created.
+
+SQL>

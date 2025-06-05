@@ -11,7 +11,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import lombok.extern.log4j.Log4j2;
 import mft.model.entity.Person;
 import mft.model.repository.PersonDA;
-import mft.model.repository.UserNotFoundException;
 
 import java.io.IOException;
 import java.net.URL;
@@ -44,7 +43,12 @@ public class PersonViewController implements Initializable {
     @FXML
     private TableColumn<Person, Integer> idCol;
 
+
     private List<Person> personList = new ArrayList<>();
+
+
+    //private PersonDataAccess personDataAccess = new PersonDataAccess();
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -69,6 +73,7 @@ public class PersonViewController implements Initializable {
                 alert.show();
                 resetForm();
                 log.info("Person created successfully" + person);
+//                personList.add(person);
             } catch (Exception e) {
                 log.error("Person Creation Error : " + e.getMessage());
             }
@@ -141,8 +146,12 @@ public class PersonViewController implements Initializable {
         PersonTab.setOnMouseReleased(tableChangeEvent);
         PersonTab.setOnKeyReleased(tableChangeEvent);
 
-
-        showPersonOnTable(personList);
+        try (PersonDA personDA = new PersonDA()) {
+            personList = personDA.findAll(); // 👈 بارگذاری لیست افراد از دیتابیس
+            showPersonOnTable(personList);
+        } catch (Exception e) {
+            log.error("Error loading person list: " + e.getMessage());
+        }
         birthDate.setValue(LocalDate.now());
     }
 
@@ -157,11 +166,12 @@ public class PersonViewController implements Initializable {
         birthDate.setValue(LocalDate.now());
 
         try (PersonDA personDA = new PersonDA()){
-            showPersonOnTable(personList);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            personList = personDA.findAll();  // دریافت لیست از دیتابیس
+            showPersonOnTable(personList);    // نمایش در جدول
+
         } catch (Exception e) {
-            log.error(e.getMessage());
+            log.error("Error loading persons: " + e.getMessage());
+
         }
     }
 

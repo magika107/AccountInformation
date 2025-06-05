@@ -1,6 +1,7 @@
 package mft.model.repository;
 
 import lombok.extern.log4j.Log4j2;
+import mft.controller.exception.UserNotFoundException;
 import mft.model.entity.Person;
 
 import java.sql.*;
@@ -18,21 +19,7 @@ public class PersonDA implements AutoCloseable {
     }
 
     public void save(Person person) throws SQLException {
-        preparedStatement = connection.prepareStatement("insert into persons values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        preparedStatement.setInt(1, person.getId());
-        preparedStatement.setString(2, person.getName());
-        preparedStatement.setString(3, person.getFamily());
-        preparedStatement.setString(4, person.getUsername());
-        preparedStatement.setString(5, person.getPassword());
-        preparedStatement.setDate(6, Date.valueOf(person.getBirthDate()));
-        preparedStatement.execute();
-        log.info("Person Saved " + person);
-    }
-
-    public void edit(Person person) throws SQLException {
-        preparedStatement = connection.prepareStatement(
-                "update persons set id=?, name=?, family=?, username=?, password=?, birth_date=?, phone_number=? "
-        );
+        preparedStatement = connection.prepareStatement("insert into PERSON values (?, ?, ?, ?, ?, ?, ?)");
         preparedStatement.setInt(1, person.getId());
         preparedStatement.setString(2, person.getName());
         preparedStatement.setString(3, person.getFamily());
@@ -41,12 +28,28 @@ public class PersonDA implements AutoCloseable {
         preparedStatement.setDate(6, Date.valueOf(person.getBirthDate()));
         preparedStatement.setString(7, person.getPhoneNumber());
         preparedStatement.execute();
+        log.info("Person Saved " + person);
+    }
+
+    public void edit(Person person) throws SQLException {
+        preparedStatement = connection.prepareStatement(
+                "update PERSON set  name=?, family=?, username=?, password=?, birth_date=?, phonenumber=? where id=?"
+        );
+
+        preparedStatement.setString(1, person.getName());
+        preparedStatement.setString(2, person.getFamily());
+        preparedStatement.setString(3, person.getUsername());
+        preparedStatement.setString(4, person.getPassword());
+        preparedStatement.setDate(5, Date.valueOf(person.getBirthDate()));
+        preparedStatement.setString(6, person.getPhoneNumber());
+        preparedStatement.setInt(7, person.getId());
+        preparedStatement.execute();
         log.info("Person Edited " + person);
     }
 
     public void delete(int id) throws SQLException {
         preparedStatement = connection.prepareStatement(
-                "delete from persons where id=?"
+                "delete from PERSON where id=?"
         );
         preparedStatement.setInt(1, id);
         preparedStatement.execute();
@@ -56,7 +59,7 @@ public class PersonDA implements AutoCloseable {
     public List<Person> findAll() throws SQLException {
         List<Person> personList = new ArrayList<>();
         connection = ConnectionProvider.getConnectionProvider().getConnection();
-        preparedStatement = connection.prepareStatement("select * from persons");
+        preparedStatement = connection.prepareStatement("select * from PERSON");
         ResultSet resultSet = preparedStatement.executeQuery();
         while (resultSet.next()) {
             Person person =
@@ -68,7 +71,7 @@ public class PersonDA implements AutoCloseable {
                             .username(resultSet.getString("USERNAME"))
                             .password(resultSet.getString("PASSWORD"))
                             .birthDate(resultSet.getDate("BIRTH_DATE").toLocalDate())
-                            .phoneNumber(resultSet.getString("PhoneNumber"))
+                            .phoneNumber(resultSet.getString("PHONENUMBER"))
 
                             .build();
             personList.add(person);
@@ -80,7 +83,7 @@ public class PersonDA implements AutoCloseable {
     public Person findById(int id) throws SQLException, UserNotFoundException {
         Person person = null;
         connection = ConnectionProvider.getConnectionProvider().getConnection();
-        preparedStatement = connection.prepareStatement("select * from persons where id=?");
+        preparedStatement = connection.prepareStatement("select * from PERSON where id=?");
         preparedStatement.setInt(1, id);
         ResultSet resultSet = preparedStatement.executeQuery();
         if (resultSet.next()) {
@@ -92,7 +95,7 @@ public class PersonDA implements AutoCloseable {
                     .username(resultSet.getString("USERNAME"))
                     .password(resultSet.getString("PASSWORD"))
                     .birthDate(resultSet.getDate("BIRTH_DATE").toLocalDate())
-                    .phoneNumber(resultSet.getString("PHONE_NUMBER"))
+                    .password(resultSet.getString("PHONENUMBER"))
 
                     .build();
         }
@@ -107,7 +110,7 @@ public class PersonDA implements AutoCloseable {
     public List<Person> findByNameAndFamily(String name, String family) throws SQLException, UserNotFoundException {
         List<Person> personList = new ArrayList<>();
         connection = ConnectionProvider.getConnectionProvider().getConnection();
-        preparedStatement = connection.prepareStatement("select * from persons where name like ? and family like ?");
+        preparedStatement = connection.prepareStatement("select * from PERSON where name like ? and family like ?");
         preparedStatement.setString(1, name + "%");
         preparedStatement.setString(2, family + "%");
         ResultSet resultSet = preparedStatement.executeQuery();
@@ -121,7 +124,7 @@ public class PersonDA implements AutoCloseable {
                             .username(resultSet.getString("USERNAME"))
                             .password(resultSet.getString("PASSWORD"))
                             .birthDate(resultSet.getDate("BIRTH_DATE").toLocalDate())
-                            .phoneNumber(resultSet.getString("PHONE_NUMBER"))
+                            .phoneNumber(resultSet.getString("PHONENUMBER"))
 
                             .build();
             personList.add(person);
@@ -137,7 +140,7 @@ public class PersonDA implements AutoCloseable {
     public Person login(String username, String password) throws UserNotFoundException, SQLException {
         Person person = null;
         connection = ConnectionProvider.getConnectionProvider().getConnection();
-        preparedStatement = connection.prepareStatement("select * from persons where username=? and password=?");
+        preparedStatement = connection.prepareStatement("select * from PERSON where username=? and password=?");
         preparedStatement.setString(1, username);
         preparedStatement.setString(2, password);
         ResultSet resultSet = preparedStatement.executeQuery();
@@ -149,9 +152,9 @@ public class PersonDA implements AutoCloseable {
                     .family(resultSet.getString("FAMILY"))
                     .username(resultSet.getString("USERNAME"))
                     .password(resultSet.getString("PASSWORD"))
-                    .phoneNumber(resultSet.getString("PHONE_NUMBER"))
-
                     .birthDate(resultSet.getDate("BIRTH_DATE").toLocalDate())
+                    .phoneNumber(resultSet.getString("PHONENUMBER"))
+
                     .build();
         }
         if (person == null) {

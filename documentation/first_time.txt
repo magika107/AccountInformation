@@ -1,0 +1,3 @@
+>sqlplus
+Enter user-name: sys as sysdba
+Enter password:

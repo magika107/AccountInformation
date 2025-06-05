@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 import lombok.extern.log4j.Log4j2;
 import mft.model.entity.Person;
 import mft.model.repository.PersonDA;
-import mft.model.repository.UserNotFoundException;
+import mft.controller.exception.UserNotFoundException;
 
 import java.net.URL;
 import java.util.ResourceBundle;

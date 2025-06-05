@@ -21,23 +21,23 @@ public class App extends Application {
                         .username("Admin")
                         .password("Admin")
                         .build();
-        PersonDA personDA = new PersonDA();
-        personDA.save(person);
+        PersonDA personDataA = new PersonDA();
+        personDataA.save(person);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-//        saveAdmin();
         try {
             Scene scene = new Scene(
-                    FXMLLoader.load(getClass().getResource("/view/LoginView.fxml"))
+                    FXMLLoader.load(getClass().getResource("/view/LoginForm.fxml"))
             );
             primaryStage.setScene(scene);
             primaryStage.setTitle("Login");
             log.info("App Started");
             primaryStage.show();
         } catch (Exception e) {
-            log.error("Start App" + e.getMessage());
+            log.error("Start App: " + e.getMessage(), e);
         }
     }
+
 }
