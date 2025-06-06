@@ -57,7 +57,7 @@ public class PersonViewController implements Initializable {
         saveBtn.setOnMouseClicked((event) -> {
 
 
-            try(PersonDA personDA = new PersonDA()) {
+            try (PersonDA personDA = new PersonDA()) {
                 Person person = Person
                         .builder()
                         .id(Integer.parseInt(idTxt.getText()))
@@ -69,12 +69,20 @@ public class PersonViewController implements Initializable {
                         .username(userNameTxt.getText())
                         .build();
                 personDA.save(person);
-                Alert alert = new Alert(Alert.AlertType.INFORMATION, "Person created successfully", ButtonType.OK);
+                Alert alert = new Alert(
+                        Alert.AlertType.INFORMATION,
+                        "Person created successfully",
+                        ButtonType.OK);
                 alert.show();
                 resetForm();
                 log.info("Person created successfully" + person);
 //                personList.add(person);
             } catch (Exception e) {
+                Alert alert = new Alert(
+                        Alert.AlertType.INFORMATION,
+                        "Person created successfully",
+                        ButtonType.OK);
+                alert.show();
                 log.error("Person Creation Error : " + e.getMessage());
             }
         });
@@ -97,12 +105,17 @@ public class PersonViewController implements Initializable {
                 resetForm();
                 log.info("Person Edit Successfully " + person);
             } catch (Exception e) {
+                Alert alert = new Alert(
+                        Alert.AlertType.INFORMATION,
+                        "Person Edit successfully",
+                        ButtonType.OK);
+                alert.show();
                 log.error("Person Editing " + e.getMessage());
             }
         });
 
         removeBtn.setOnAction((event) -> {
-            try (PersonDA personDA = new PersonDA()){
+            try (PersonDA personDA = new PersonDA()) {
                 int id = Integer.parseInt(idTxt.getText());
                 personDA.delete(id);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, "Person Removed Successfully", ButtonType.OK);
@@ -110,6 +123,11 @@ public class PersonViewController implements Initializable {
                 resetForm();
                 log.info("Person Deleted Successfully " + id);
             } catch (Exception e) {
+                Alert alert = new Alert(
+                        Alert.AlertType.INFORMATION,
+                        "Person Delete successfully",
+                        ButtonType.OK);
+                alert.show();
                 log.error("Person Deleting Error :" + e.getMessage());
             }
         });
@@ -119,7 +137,7 @@ public class PersonViewController implements Initializable {
         });
 
         nameSearchTxt.setOnKeyReleased((event) -> {
-            try (PersonDA personDA = new PersonDA()){
+            try (PersonDA personDA = new PersonDA()) {
                 showPersonOnTable(personDA.findByNameAndFamily(nameSearchTxt.getText(), familySearchTxt.getText()));
             } catch (Exception e) {
                 log.error(e.getMessage());
@@ -127,7 +145,7 @@ public class PersonViewController implements Initializable {
         });
 
         familySearchTxt.setOnKeyReleased((event) -> {
-            try (PersonDA personDA = new PersonDA()){
+            try (PersonDA personDA = new PersonDA()) {
                 showPersonOnTable(personDA.findByNameAndFamily(nameSearchTxt.getText(), familySearchTxt.getText()));
             } catch (Exception e) {
                 log.error(e.getMessage());
@@ -147,7 +165,7 @@ public class PersonViewController implements Initializable {
         PersonTab.setOnKeyReleased(tableChangeEvent);
 
         try (PersonDA personDA = new PersonDA()) {
-            personList = personDA.findAll(); // 👈 بارگذاری لیست افراد از دیتابیس
+            personList = personDA.findAll();
             showPersonOnTable(personList);
         } catch (Exception e) {
             log.error("Error loading person list: " + e.getMessage());
@@ -165,10 +183,9 @@ public class PersonViewController implements Initializable {
         userNameTxt.clear();
         birthDate.setValue(LocalDate.now());
 
-        try (PersonDA personDA = new PersonDA()){
-            personList = personDA.findAll();  // دریافت لیست از دیتابیس
-            showPersonOnTable(personList);    // نمایش در جدول
-
+        try (PersonDA personDA = new PersonDA()) {
+            personList = personDA.findAll();
+            showPersonOnTable(personList);
         } catch (Exception e) {
             log.error("Error loading persons: " + e.getMessage());
 

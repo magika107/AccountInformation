@@ -532,3 +532,78 @@
 2025-06-06 01:34:06.011 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
 2025-06-06 01:34:06.012 [JavaFX Application Thread] INFO  mft.controller.PersonViewController - Person Deleted Successfully 4
 2025-06-06 01:34:06.012 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 14:41:06.892 [JavaFX Application Thread] INFO  mft.App - App Started
+2025-06-06 14:41:23.509 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 14:41:24.810 [JavaFX Application Thread] ERROR mft.model.repository.PersonDA - Login - No User With username/password mehdi:mehdi1123
+2025-06-06 14:41:24.810 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 14:41:24.815 [JavaFX Application Thread] ERROR mft.controller.LoginController - Person Login Error : mehdi:mehdi1123 null
+2025-06-06 14:41:35.675 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 14:41:35.758 [JavaFX Application Thread] ERROR mft.model.repository.PersonDA - Login - No User With username/password mehdi:mehdi123
+2025-06-06 14:41:35.759 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 14:41:35.760 [JavaFX Application Thread] ERROR mft.controller.LoginController - Person Login Error : mehdi:mehdi123 null
+2025-06-06 14:41:46.236 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 14:41:46.318 [JavaFX Application Thread] ERROR mft.model.repository.PersonDA - Login - No User With username/password mehdi:mehdi123
+2025-06-06 14:41:46.318 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 14:41:46.319 [JavaFX Application Thread] ERROR mft.controller.LoginController - Person Login Error : mehdi:mehdi123 null
+2025-06-06 14:42:13.859 [JavaFX Application Thread] INFO  mft.App - App Started
+2025-06-06 14:42:50.197 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 14:42:51.412 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Login Person(id=12, name=ali, family=alipour, birthDate=2019-08-07, phoneNumber=3453453, username=ali, password=ali123)
+2025-06-06 14:42:51.534 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 14:42:51.659 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons
+2025-06-06 14:42:51.660 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 14:42:51.668 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 14:42:51.753 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons
+2025-06-06 14:42:51.753 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 14:42:52.028 [JavaFX Application Thread] INFO  mft.controller.LoginController - Person Logged In Successfully ali:ali123
+2025-06-06 14:42:52.028 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 16:33:15.020 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 16:33:16.440 [main] ERROR mft.model.repository.PersonDA - No User With name and family (starts with) : mehdi ghasemi
+2025-06-06 16:33:16.440 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 16:33:42.009 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 16:33:43.546 [main] ERROR mft.model.repository.PersonDA - No User With name and family (starts with) : ali ali123
+2025-06-06 16:33:43.547 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 16:34:46.635 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 16:34:47.999 [main] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family ali alipour
+2025-06-06 16:34:48.000 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 17:31:15.072 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 17:31:16.556 [main] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family ali alipour
+2025-06-06 17:31:16.557 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 17:43:26.088 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 17:43:27.696 [main] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family ali alipour
+2025-06-06 17:43:27.698 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 17:44:37.964 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 17:44:39.336 [main] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family ali alipour
+2025-06-06 17:44:39.337 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 17:46:39.084 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 17:46:40.276 [main] INFO  mft.model.repository.PersonDA - Person Saved Person(id=0, name=adbar, family=moradi, birthDate=2010-01-01, phoneNumber=09121231111, username=akbar43, password=adii434)
+2025-06-06 17:46:40.278 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 17:51:13.803 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 17:51:14.936 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 17:52:27.921 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 17:52:29.126 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 18:38:17.562 [JavaFX Application Thread] INFO  mft.App - App Started
+2025-06-06 18:38:35.482 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 18:38:36.777 [main] INFO  mft.model.repository.PersonDA - Person Saved Person(id=2, name=samir, family=karimi, birthDate=2020-01-01, phoneNumber=09121230000, username=samir4334, password=samiriii5)
+2025-06-06 18:38:36.778 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 19:01:58.903 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 19:02:00.167 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 19:02:30.051 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 19:02:31.285 [main] INFO  mft.model.repository.PersonDA - Person Saved Person(id=4, name=karim, family=safari, birthDate=2011-01-01, phoneNumber=09121230000, username=karim90, password=safari987)
+2025-06-06 19:02:31.285 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 19:09:10.889 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 19:09:12.154 [main] INFO  mft.model.repository.PersonDA - Person Saved Person(id=5, name=karim, family=safari, birthDate=2011-01-01, phoneNumber=09121230000, username=karim90, password=safari987)
+2025-06-06 19:09:12.155 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 19:09:43.050 [main] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 19:09:44.267 [main] INFO  mft.model.repository.PersonDA - Person Saved Person(id=6, name=karimali, family=safariiii, birthDate=2011-01-01, phoneNumber=09121230000, username=karim90, password=safari987)
+2025-06-06 19:09:44.268 [main] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 19:28:54.185 [JavaFX Application Thread] INFO  mft.App - App Started
+2025-06-06 19:29:29.160 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 19:29:30.404 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Login Person(id=5, name=karim, family=safari, birthDate=2011-01-01, phoneNumber=09121230000, username=karim90, password=safari987)
+2025-06-06 19:29:30.539 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 19:29:30.648 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons
+2025-06-06 19:29:30.649 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 19:29:30.659 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-06 19:29:30.750 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons
+2025-06-06 19:29:30.750 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 19:29:31.026 [JavaFX Application Thread] INFO  mft.controller.LoginController - Person Logged In Successfully karim90:safari987
+2025-06-06 19:29:31.026 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect

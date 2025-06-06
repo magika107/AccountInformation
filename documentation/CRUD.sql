@@ -1,32 +1,38 @@
--- Create new person
-insert into PERSON
-    (ID, NAME, FAMILY, USERNAME, PASSWORD, BIRTH_DATE, PHONENUMBER)
-values (12, 'ali', 'alipour', 'ali', 'ali123', null, null);
+-- حذف sequence اگر وجود دارد
+BEGIN
+    EXECUTE IMMEDIATE 'DROP SEQUENCE person_seq';
+EXCEPTION
+    WHEN OTHERS THEN
+        IF SQLCODE != -2289 THEN -- sequence does not exist
+            RAISE;
+        END IF;
+END;
+/
 
-SELECT table_name FROM user_tables WHERE table_name = 'PERSONS';
-SELECT * FROM all_tables WHERE table_name = 'PERSONS';
+-- ساخت sequence جدید
+CREATE SEQUENCE person_seq START WITH 1 INCREMENT BY 1;
 
+-- نمایش مقدار فعلی
+SELECT person_seq.nextval FROM dual;
 
--- Read person(s)
--- select ID,
---        NAME,
---        FAMILY,
---        USERNAME,
---        PASSWORD,
---        PHONENUMBER
--- from PERSON
--- where name = 'ali';
+-- ایجاد جدول اگر قبلاً ساخته نشده
+BEGIN
+    EXECUTE IMMEDIATE '
+    CREATE TABLE PERSON (
+                            id         NUMBER PRIMARY KEY,
+                            name       NVARCHAR2(30),
+                            family     NVARCHAR2(30),
+                            username   NVARCHAR2(20) UNIQUE NOT NULL,
+                            password   NVARCHAR2(20),
+                            birth_date DATE,
+                            phonenumber NVARCHAR2(15)
+    )';
+EXCEPTION
+    WHEN OTHERS THEN
+        IF SQLCODE != -955 THEN -- table already exists
+            RAISE;
+        END IF;
+END;
+/
 
--- Update person(s)
--- update PERSON
--- set name     = 'alireza',
---     password = 'aliali112233'
--- where id = 2;
-
--- Delete person(s)
--- delete
--- from PERSON
--- where id = 2;
-
--- Commit changes
-commit;
+COMMIT;

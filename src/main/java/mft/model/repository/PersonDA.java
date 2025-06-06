@@ -19,6 +19,11 @@ public class PersonDA implements AutoCloseable {
     }
 
     public void save(Person person) throws SQLException {
+        preparedStatement = connection.prepareStatement("select person_seq.nextval from dual");
+        ResultSet resultSet = preparedStatement.executeQuery();
+        resultSet.next();
+        person.setId(resultSet.getInt(1));
+
         preparedStatement = connection.prepareStatement("insert into PERSON values (?, ?, ?, ?, ?, ?, ?)");
         preparedStatement.setInt(1, person.getId());
         preparedStatement.setString(2, person.getName());
@@ -83,9 +88,10 @@ public class PersonDA implements AutoCloseable {
     public Person findById(int id) throws SQLException, UserNotFoundException {
         Person person = null;
         connection = ConnectionProvider.getConnectionProvider().getConnection();
-        preparedStatement = connection.prepareStatement("select * from PERSON where id=?");
-        preparedStatement.setInt(1, id);
+        preparedStatement = connection.prepareStatement("select person_seq.nextval from dual");
         ResultSet resultSet = preparedStatement.executeQuery();
+        resultSet.next();
+        person.setId(resultSet.getInt("nextval"));
         if (resultSet.next()) {
             person = Person
                     .builder()
@@ -95,7 +101,7 @@ public class PersonDA implements AutoCloseable {
                     .username(resultSet.getString("USERNAME"))
                     .password(resultSet.getString("PASSWORD"))
                     .birthDate(resultSet.getDate("BIRTH_DATE").toLocalDate())
-                    .password(resultSet.getString("PHONENUMBER"))
+                    .phoneNumber(resultSet.getString("PHONENUMBER"))
 
                     .build();
         }
