@@ -607,3 +607,4 @@
 2025-06-06 19:29:30.750 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
 2025-06-06 19:29:31.026 [JavaFX Application Thread] INFO  mft.controller.LoginController - Person Logged In Successfully karim90:safari987
 2025-06-06 19:29:31.026 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-06 19:51:53.461 [JavaFX Application Thread] INFO  mft.App - App Started
