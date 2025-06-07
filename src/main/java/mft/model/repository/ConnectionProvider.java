@@ -19,12 +19,12 @@ public class ConnectionProvider {
         // basicDataSource.setDriverClassName("com.mysql.jdbc.Driver");
         // basicDataSource.setUrl("jdbc:mysql://localhost:3306/meta_laptop");
 
-
         basicDataSource.setDriverClassName("oracle.jdbc.OracleDriver");
-        basicDataSource.setUrl("jdbc:oracle:thin:@localhost:1521:orcl");
+        basicDataSource.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
         basicDataSource.setUsername("java");
         basicDataSource.setPassword("java123");
         basicDataSource.setMinIdle(5);
+        basicDataSource.setMaxTotal(20);
         return basicDataSource.getConnection();
 
 

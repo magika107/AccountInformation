@@ -7,13 +7,13 @@ public class TestSave {
     public static void main(String[] args) {
         try (PersonDA personDA = new PersonDA()) {
             Person person = Person.builder()
-                  //.id(67)
-                    .name("karimali")
-                    .family("safariiii")
-                    .username("karim90")
-                    .password("safari987")
-                    .birthDate(LocalDate.of(2011, 1, 1))
-                    .phoneNumber("09121230000")
+                  //.id(27)
+                    .name("hamed")
+                    .family("moradi")
+                    .username("shakeri")
+                    .password("saber")
+                    .birthDate(LocalDate.of(2019, 1, 10))
+                    .phoneNumber("09121235555")
                     .build();
 
             // personDA.delete(45);

@@ -1,6 +1,7 @@
 package mft.model.repository;
 
 import lombok.extern.log4j.Log4j2;
+import mft.controller.exception.InvalidPersonDataException;
 import mft.controller.exception.UserNotFoundException;
 import mft.model.entity.Person;
 
@@ -21,6 +22,8 @@ public class PersonDA implements AutoCloseable {
     public void save(Person person) throws SQLException {
         preparedStatement = connection.prepareStatement("select person_seq.nextval from dual");
         ResultSet resultSet = preparedStatement.executeQuery();
+
+
         resultSet.next();
         person.setId(resultSet.getInt(1));
 
@@ -61,49 +64,45 @@ public class PersonDA implements AutoCloseable {
         log.info("Person Removed " + id);
     }
 
-    public List<Person> findAll() throws SQLException {
+    public List<Person> findAll() throws SQLException, InvalidPersonDataException {
         List<Person> personList = new ArrayList<>();
         connection = ConnectionProvider.getConnectionProvider().getConnection();
         preparedStatement = connection.prepareStatement("select * from PERSON");
         ResultSet resultSet = preparedStatement.executeQuery();
         while (resultSet.next()) {
-            Person person =
-                    Person
-                            .builder()
-                            .id(resultSet.getInt("ID"))
-                            .name(resultSet.getString("NAME"))
-                            .family(resultSet.getString("FAMILY"))
-                            .username(resultSet.getString("USERNAME"))
-                            .password(resultSet.getString("PASSWORD"))
-                            .birthDate(resultSet.getDate("BIRTH_DATE").toLocalDate())
-                            .phoneNumber(resultSet.getString("PHONENUMBER"))
+            Person person = new Person(
 
-                            .build();
+                    resultSet.getInt("ID"),
+                    resultSet.getString("NAME"),
+                    resultSet.getString("FAMILY"),
+                    resultSet.getString("USERNAME"),
+                    resultSet.getString("PASSWORD"),
+                    resultSet.getDate("BIRTH_DATE").toLocalDate(),
+                    resultSet.getString("PHONENUMBER"));
+
+
             personList.add(person);
         }
         log.info("Find All Persons");
         return personList;
     }
 
-    public Person findById(int id) throws SQLException, UserNotFoundException {
+    public Person findById(int id) throws SQLException, UserNotFoundException, InvalidPersonDataException {
         Person person = null;
         connection = ConnectionProvider.getConnectionProvider().getConnection();
-        preparedStatement = connection.prepareStatement("select person_seq.nextval from dual");
+        preparedStatement = connection.prepareStatement("select * from PERSON where id=?");
+        preparedStatement.setInt(1, id);
         ResultSet resultSet = preparedStatement.executeQuery();
-        resultSet.next();
-        person.setId(resultSet.getInt("nextval"));
         if (resultSet.next()) {
-            person = Person
-                    .builder()
-                    .id(resultSet.getInt("ID"))
-                    .name(resultSet.getString("NAME"))
-                    .family(resultSet.getString("FAMILY"))
-                    .username(resultSet.getString("USERNAME"))
-                    .password(resultSet.getString("PASSWORD"))
-                    .birthDate(resultSet.getDate("BIRTH_DATE").toLocalDate())
-                    .phoneNumber(resultSet.getString("PHONENUMBER"))
+            person = new Person(
 
-                    .build();
+                    resultSet.getInt("ID"),
+                    resultSet.getString("NAME"),
+                    resultSet.getString("FAMILY"),
+                    resultSet.getString("USERNAME"),
+                    resultSet.getString("PASSWORD"),
+                    resultSet.getDate("BIRTH_DATE").toLocalDate(),
+                    resultSet.getString("PHONENUMBER"));
         }
         if (person == null) {
             log.error("No User With Id " + id);
@@ -113,7 +112,7 @@ public class PersonDA implements AutoCloseable {
         return person;
     }
 
-    public List<Person> findByNameAndFamily(String name, String family) throws SQLException, UserNotFoundException {
+    public List<Person> findByNameAndFamily(String name, String family) throws SQLException, UserNotFoundException, InvalidPersonDataException {
         List<Person> personList = new ArrayList<>();
         connection = ConnectionProvider.getConnectionProvider().getConnection();
         preparedStatement = connection.prepareStatement("select * from PERSON where name like ? and family like ?");
@@ -121,19 +120,17 @@ public class PersonDA implements AutoCloseable {
         preparedStatement.setString(2, family + "%");
         ResultSet resultSet = preparedStatement.executeQuery();
         while (resultSet.next()) {
-            Person person =
-                    Person
-                            .builder()
-                            .id(resultSet.getInt("ID"))
-                            .name(resultSet.getString("NAME"))
-                            .family(resultSet.getString("FAMILY"))
-                            .username(resultSet.getString("USERNAME"))
-                            .password(resultSet.getString("PASSWORD"))
-                            .birthDate(resultSet.getDate("BIRTH_DATE").toLocalDate())
-                            .phoneNumber(resultSet.getString("PHONENUMBER"))
+            Person person = new Person(
 
-                            .build();
+                    resultSet.getInt("ID"),
+                    resultSet.getString("NAME"),
+                    resultSet.getString("FAMILY"),
+                    resultSet.getString("USERNAME"),
+                    resultSet.getString("PASSWORD"),
+                    resultSet.getDate("BIRTH_DATE").toLocalDate(),
+                    resultSet.getString("PHONENUMBER"));
             personList.add(person);
+
         }
         if (personList.isEmpty()) {
             log.error("No User With name and family (starts with) : " + name + " " + family);
@@ -143,7 +140,7 @@ public class PersonDA implements AutoCloseable {
         return personList;
     }
 
-    public Person login(String username, String password) throws UserNotFoundException, SQLException {
+    public Person login(String username, String password) throws UserNotFoundException, SQLException, InvalidPersonDataException {
         Person person = null;
         connection = ConnectionProvider.getConnectionProvider().getConnection();
         preparedStatement = connection.prepareStatement("select * from PERSON where username=? and password=?");
@@ -151,17 +148,16 @@ public class PersonDA implements AutoCloseable {
         preparedStatement.setString(2, password);
         ResultSet resultSet = preparedStatement.executeQuery();
         if (resultSet.next()) {
-            person = Person
-                    .builder()
-                    .id(resultSet.getInt("ID"))
-                    .name(resultSet.getString("NAME"))
-                    .family(resultSet.getString("FAMILY"))
-                    .username(resultSet.getString("USERNAME"))
-                    .password(resultSet.getString("PASSWORD"))
-                    .birthDate(resultSet.getDate("BIRTH_DATE").toLocalDate())
-                    .phoneNumber(resultSet.getString("PHONENUMBER"))
+            person = new Person(
 
-                    .build();
+                    resultSet.getInt("ID"),
+                    resultSet.getString("NAME"),
+                    resultSet.getString("FAMILY"),
+                    resultSet.getString("USERNAME"),
+                    resultSet.getString("PASSWORD"),
+                    resultSet.getDate("BIRTH_DATE").toLocalDate(),
+                    resultSet.getString("PHONENUMBER"));
+
         }
         if (person == null) {
             log.error("Login - No User With username/password " + username + ":" + password);

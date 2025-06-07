@@ -47,9 +47,6 @@ public class PersonViewController implements Initializable {
     private List<Person> personList = new ArrayList<>();
 
 
-    //private PersonDataAccess personDataAccess = new PersonDataAccess();
-
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         resetForm();
@@ -58,21 +55,21 @@ public class PersonViewController implements Initializable {
 
 
             try (PersonDA personDA = new PersonDA()) {
-                Person person = Person
-                        .builder()
-                        .id(Integer.parseInt(idTxt.getText()))
-                        .name(nameTxt.getText())
-                        .family(familyTxt.getText())
-                        .birthDate(birthDate.getValue())
-                        .phoneNumber(phoneNumberTxt.getText())
-                        .password(passwordPas.getText())
-                        .username(userNameTxt.getText())
-                        .build();
+                Person person = new Person(
+                        nameTxt.getText(),
+                        familyTxt.getText(),
+                        userNameTxt.getText(),
+                        passwordPas.getText(),
+                        birthDate.getValue(),
+                        phoneNumberTxt.getText());
                 personDA.save(person);
+
                 Alert alert = new Alert(
                         Alert.AlertType.INFORMATION,
                         "Person created successfully",
-                        ButtonType.OK);
+                        ButtonType.OK
+                );
+
                 alert.show();
                 resetForm();
                 log.info("Person created successfully" + person);
@@ -89,16 +86,14 @@ public class PersonViewController implements Initializable {
 
         editBtn.setOnAction((event) -> {
             try (PersonDA personDA = new PersonDA()) {
-                Person person =
-                        Person
-                                .builder()
-                                .id(Integer.parseInt(idTxt.getText()))
-                                .name(nameTxt.getText())
-                                .family(familyTxt.getText())
-                                .username(userNameTxt.getText())
-                                .password(passwordPas.getText())
-                                .birthDate(birthDate.getValue())
-                                .build();
+                Person person = new Person(
+                        Integer.parseInt(idTxt.getText()),
+                        nameTxt.getText(),
+                        familyTxt.getText(),
+                        userNameTxt.getText(),
+                        passwordPas.getText(),
+                        birthDate.getValue(),
+                        phoneNumberTxt.getText());
                 personDA.edit(person);
                 Alert alert = new Alert(Alert.AlertType.INFORMATION, "Person Edited Successfully", ButtonType.OK);
                 alert.show();
@@ -161,6 +156,7 @@ public class PersonViewController implements Initializable {
             passwordPas.setText(selectedPerson.getPassword());
             userNameTxt.setText(selectedPerson.getUsername());
         };
+
         PersonTab.setOnMouseReleased(tableChangeEvent);
         PersonTab.setOnKeyReleased(tableChangeEvent);
 
@@ -170,24 +166,26 @@ public class PersonViewController implements Initializable {
         } catch (Exception e) {
             log.error("Error loading person list: " + e.getMessage());
         }
-        birthDate.setValue(LocalDate.now());
+
     }
 
 
     public void resetForm() {
-        idTxt.setText(String.valueOf(personList.size() + 1));
+        idTxt.clear();
         nameTxt.clear();
         familyTxt.clear();
         phoneNumberTxt.clear();
         passwordPas.clear();
         userNameTxt.clear();
+        nameSearchTxt.clear();
+        familySearchTxt.clear();
+
         birthDate.setValue(LocalDate.now());
 
         try (PersonDA personDA = new PersonDA()) {
-            personList = personDA.findAll();
             showPersonOnTable(personList);
         } catch (Exception e) {
-            log.error("Error loading persons: " + e.getMessage());
+            log.error(e.getMessage());
 
         }
     }
