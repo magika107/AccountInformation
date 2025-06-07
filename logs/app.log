@@ -745,3 +745,73 @@
 2025-06-07 22:48:44.836 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - Error loading person list: Invalid Username!!!
 2025-06-07 22:48:45.003 [JavaFX Application Thread] INFO  mft.controller.LoginController - Person Logged In Successfully shakeri:saber
 2025-06-07 22:48:45.003 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:11:22.252 [JavaFX Application Thread] INFO  mft.App - App Started
+2025-06-07 23:11:51.394 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:11:53.244 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Login mft.model.entity.Person@2817ce4f
+2025-06-07 23:11:53.365 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:11:53.415 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:11:53.418 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:11:53.480 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons
+2025-06-07 23:11:53.481 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:11:53.763 [JavaFX Application Thread] INFO  mft.controller.LoginController - Person Logged In Successfully mehdi:mypassword
+2025-06-07 23:11:53.763 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:52.121 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:52.141 [JavaFX Application Thread] ERROR mft.model.repository.PersonDA - No User With name and family (starts with) : m 
+2025-06-07 23:23:52.142 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:52.142 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - null
+2025-06-07 23:23:53.137 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:53.297 [JavaFX Application Thread] ERROR mft.model.repository.PersonDA - No User With name and family (starts with) : me 
+2025-06-07 23:23:53.298 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:53.298 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - null
+2025-06-07 23:23:54.401 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:54.527 [JavaFX Application Thread] ERROR mft.model.repository.PersonDA - No User With name and family (starts with) : meh 
+2025-06-07 23:23:54.527 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:54.528 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - null
+2025-06-07 23:23:55.345 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:55.458 [JavaFX Application Thread] ERROR mft.model.repository.PersonDA - No User With name and family (starts with) : me 
+2025-06-07 23:23:55.458 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:55.459 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - null
+2025-06-07 23:23:55.530 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:55.666 [JavaFX Application Thread] ERROR mft.model.repository.PersonDA - No User With name and family (starts with) : m 
+2025-06-07 23:23:55.666 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:55.667 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - null
+2025-06-07 23:23:55.705 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:55.800 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family  
+2025-06-07 23:23:55.803 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:55.881 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:56.020 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family  
+2025-06-07 23:23:56.021 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:57.249 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:57.375 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family M 
+2025-06-07 23:23:57.376 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:57.380 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:57.467 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family M 
+2025-06-07 23:23:57.467 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:58.401 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:58.494 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family Me 
+2025-06-07 23:23:58.495 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:58.625 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:58.748 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family Meh 
+2025-06-07 23:23:58.749 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:58.865 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:58.989 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family Mehd 
+2025-06-07 23:23:58.989 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:23:59.001 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:23:59.087 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family Mehdi 
+2025-06-07 23:23:59.088 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:24:03.945 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:24:04.075 [JavaFX Application Thread] ERROR mft.model.repository.PersonDA - No User With name and family (starts with) : Mehdi a
+2025-06-07 23:24:04.075 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:24:04.075 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - null
+2025-06-07 23:24:04.385 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:24:04.512 [JavaFX Application Thread] ERROR mft.model.repository.PersonDA - No User With name and family (starts with) : Mehdi ah
+2025-06-07 23:24:04.513 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:24:04.513 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - null
+2025-06-07 23:24:05.368 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:24:05.417 [JavaFX Application Thread] ERROR mft.model.repository.PersonDA - No User With name and family (starts with) : Mehdi a
+2025-06-07 23:24:05.418 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:24:05.418 [JavaFX Application Thread] ERROR mft.controller.PersonViewController - null
+2025-06-07 23:24:05.545 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-07 23:24:05.667 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family Mehdi 
+2025-06-07 23:24:05.668 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
+2025-06-07 23:24:05.729 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
