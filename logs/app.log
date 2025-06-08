@@ -815,3 +815,25 @@
 2025-06-07 23:24:05.667 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Find All Persons By Name and Family Mehdi 
 2025-06-07 23:24:05.668 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Disconnect
 2025-06-07 23:24:05.729 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-08 19:59:35.497 [JavaFX Application Thread] INFO  mft.App - App Started
+2025-06-08 20:25:27.580 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-08 20:25:29.218 [JavaFX Application Thread] ERROR mft.controller.LoginController - Person Login Error : Cannot create PoolableConnectionFactory (ORA-01017: invalid username/password; logon denied
+)
+2025-06-08 20:25:56.394 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-08 20:25:57.428 [JavaFX Application Thread] ERROR mft.controller.LoginController - Person Login Error : Cannot create PoolableConnectionFactory (ORA-01017: invalid username/password; logon denied
+)
+2025-06-08 20:26:30.235 [JavaFX Application Thread] INFO  mft.App - App Started
+2025-06-08 20:26:43.819 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-08 20:26:45.452 [JavaFX Application Thread] ERROR mft.controller.LoginController - Person Login Error : Cannot create PoolableConnectionFactory (ORA-01017: invalid username/password; logon denied
+)
+2025-06-08 20:27:05.645 [JavaFX Application Thread] INFO  mft.App - App Started
+2025-06-08 20:27:24.283 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-08 20:27:25.918 [JavaFX Application Thread] ERROR mft.controller.LoginController - Person Login Error : Cannot create PoolableConnectionFactory (ORA-01017: invalid username/password; logon denied
+)
+2025-06-08 20:31:31.114 [JavaFX Application Thread] INFO  mft.App - App Started
+2025-06-08 20:31:56.898 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-08 20:31:58.544 [JavaFX Application Thread] ERROR mft.controller.LoginController - Person Login Error : Cannot create PoolableConnectionFactory (ORA-01017: invalid username/password; logon denied
+)
+2025-06-08 20:32:08.074 [JavaFX Application Thread] INFO  mft.model.repository.PersonDA - Connect
+2025-06-08 20:32:09.120 [JavaFX Application Thread] ERROR mft.controller.LoginController - Person Login Error : Cannot create PoolableConnectionFactory (ORA-01017: invalid username/password; logon denied
+)

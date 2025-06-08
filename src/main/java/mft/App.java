@@ -14,12 +14,16 @@ import java.sql.SQLException;
 public class App extends Application {
     public void saveAdmin() throws SQLException {
         Person person =new Person();
-//                Person
+
+
+//                         Person
 //                        .name("Mehdi")
 //                        .family("Ghasemi")
 //                        .username("Mehdi")
 //                        .password("mehdi132")
-//
+
+
+
         PersonDA personDataA = new PersonDA();
         personDataA.save(person);
     }
